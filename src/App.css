@@ -1,38 +1,355 @@
-.App {
+html {
+  scroll-behavior: smooth;
+}
+
+.Navbar{
+  text-align: center;
+  color: #467b5d;
+  background-color: #fef2c6;
+  justify-content: flex-end;
+  font-family: 'Abril Fatface', cursive;
+  position: fixed;
+  width: 100%;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 900px);
+}
+
+.Home{
+  background-color: #d76249;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Image{
+  background-image: url(/public/homeimg.png);
+  height: 960px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  height: 900px;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Name{
+  font-family: 'Abril Fatface', cursive;
+  color: #fef2c6;
+  display: flex;
+  justify-content: center;
+}
+.Presentation{
+  color: #fef2c6;
+  margin-left: 6%;
+  margin-right: 6%;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px){
+  .grid{
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .Name{
+    margin-top: 3em;
+  }
+  .Image{
+    margin-top: -2em;
+    height: 500px;  
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.aboutme{
+  height: 20%;
+  background-color: #d76249;
+  color: #fef2c6;
+  height: 800px;
+}
+
+.title-aboutme{
+  display: flex;
+  justify-content: center;
+  font-family: 'Abril Fatface', cursive;
+  padding: 5em;
+
+}
+
+.aboutme-componentText{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 900px);
+}
+
+.aboutme-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TextI{
+  font-family: 'Abril Fatface', cursive;
+  margin-left: 6%;
+  margin-right: 6%;
+  padding: 10en;
+}
+
+.TextII{
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+@media screen and (max-width: 767px){
+  .aboutme-componentText{
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+
+  }
+  .aboutme-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .TextI{
+    font-family: 'Abril Fatface', cursive;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 10%;
+  }
+  
+  .TextII{
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+
+#root{
+  width: 100%;
+}
+
+.title-timeline{
+  color: #fef2c6;
+  display: flex;
+  justify-content: center;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.timeline{
+  background-color: #d76249;
+  padding: 5em;
+  
+}
+
+
+.timeline-container{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* margin: 40px 0; */
+}
+
+.timeline-container::after{
+  background-color: #fef2c6;
+  content: '';
+  position: absolute;
+  left: calc(50% - 2px);
+  width: 4px;
+  height: 30%;
+}
+
+.timeline-item{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  margin: 10px 0;
+  width: 50%;
+  
+}
+
+.timeline-item:nth-child(odd){
+  align-self: flex-end ;
+  justify-content: flex-start;
+  padding-right: 0px;
+  padding-left: 30px;
+}
+
+.timeline-item-content{ /*revisar responsive*/
+  background-color: #fef2c6;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 15px;
+  max-width: 70%;
+  width: 350px;
+  text-align: center;
+  position: relative;
+}
+
+.timeline-item-content::after{
+  content: ' ';
+  background-color: #fef2c6; 
+  box-shadow: 1px -1px 1px rgba(0,0,0,0.2); 
+  position: absolute;
+  transform: rotate(45deg);
+  right: -7.5px;
+  top: calc(50% - 7.5px);
+  width: 15px;
+  height: 15px;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content{
+  align-items: flex-start;
+  text-align: left;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content::after{
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.2);
+  right: auto;
+  left: -7.5px;
+}
+
+.timeline-item h1{
+  font-family: 'Abril Fatface', cursive;
+  color: #467b5d;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 15px 0;
+  max-width: 250px;
+}
+
+.timeline-item p{
+  color: #467b5d;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 15px 0; 
+  max-width: 350px;
+  text-align: center;
+}
+
+.timeline-item-content .circle{
+  background-color: #467b5d;
+  border: 3px solid #fef2c6;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 10px);
+  right: -40px;
+  width: 20px;
+  height: 20px;
+  z-index: 100;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content .circle{
+  right: auto;
+  left: -40px;
+}
+
+@media screen and (max-width: 767px){
+  .timeline{
+    padding-top: 40em;
+  }
+  .timeline-item-content{
+    max-width: 100%;
+    width: 650px;
+  }
+}
+
+.List{
+  background-color: #d76249;
+  color: #fef2c6;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 900px);
+  align-items: flex-start;
+  font-size: 23px;
+  padding-left: 15%;
+  height: 250px;
+
+}
+
+@media screen and (max-width: 767px){
+  .List{
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(4, 1fr);
+    padding-left: 20%;
+    height: 100%;
+  }
+}
+
+.works-title{
+  background-color: #d76249;
+  color: #fef2c6;
+  padding: 5em;
+}
+
+.title{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Abril Fatface', cursive;
+  padding-top: 10em;
 }
 
-.App-link {
-  color: #61dafb;
+.subtitle{
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.works-box{
+  background-color: #d76249;
+}
+
+.box1{
+  display: flex;
+  justify-content: center;
+}
+
+.box2{
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+.box3{
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+.contact{
+  background-color: #d76249;
+  color: #d76249;
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
+}
+
+.contactBox-continer h1{
+  display: flex;
+  justify-content: center;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 30px;
+  padding: 1em;;
+}
+.contactBox-continer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+
+}
+
+.Icon{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
