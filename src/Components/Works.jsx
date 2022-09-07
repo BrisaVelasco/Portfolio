@@ -109,7 +109,7 @@ export const Works = ()=>{
                             <div className="Icon">
                                 <Box color='#467b5d' pr='1em'>  
                                     <Icon as={GoMarkGithub} w={7} h={7} /> 
-                                    <Link href="">Git Hub</Link>
+                                    <Link href="https://github.com/BrisaVelasco/E-commerce-Edlab">Git Hub</Link>
                                 </Box>
                             </div>
                     </Box>
@@ -140,7 +140,7 @@ export const Works = ()=>{
                         <div  className="Icon">
                             <Box color='#467b5d' pr='1em'>
                                 <Icon as={GoMarkGithub} w={7} h={7} /> 
-                                <Link href="https://github.com/BrisaVelasco/Revista-WOW">Git Hub</Link>
+                                <Link href="https://github.com/BrisaVelasco/Portfolio">Git Hub</Link>
                             </Box>
                         </div>
                     </Box>
