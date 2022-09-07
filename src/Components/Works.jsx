@@ -88,7 +88,7 @@ export const Works = ()=>{
                             
                             <div className="Icon">
                                 <Icon as={GoMarkGithub} w={7} h={7} /> 
-                                <Link href="">Git Hub</Link>
+                                <Link href="https://github.com/BrisaVelasco/Revista-WOW-">Git Hub</Link>
                             </div>
                         </Box>
                     </Box>
@@ -132,7 +132,7 @@ export const Works = ()=>{
                             </Text>
                             <div className="Icon">
                                 <Icon as={GoMarkGithub} w={7} h={7} /> 
-                                <Link href="">Git Hub</Link>
+                                <Link href="https://github.com/BrisaVelasco/E-commerce-Edlab">Git Hub</Link>
                             </div>
                         </Box>
                     </Box>
