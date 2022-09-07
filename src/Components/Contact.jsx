@@ -15,13 +15,29 @@ export const Contact = ()=>{
                 <div className="contactBox-continer">
                     <h1>Contacto</h1>
                     <Text>
-                        Actualmenteestoy en busqueda de mi primer trabajo como programadora, mi bandeja de entrada siempre está abierta.<br/> Ya sea que tengas una pregunta o simplemente quiera saludar!
+                    Actualmente estoy en busqueda de mi primer trabajo como programadora, mi bandeja de entrada siempre está abierta.
+                    <br/>
+                    Ya sea que tengas una pregunta o simplemente quieras saludar!
+
                     </Text>
-                    
-                    <Text> <Icon as={ImMail} w={7} h={7}/>brisavelasco28@gmail.com</Text>
-                    <Link href='https://www.linkedin.com/in/brisa-velasco-4a993b244/'> <Icon as={FaLinkedin } w={7} h={7} />Brisa Velasco</Link>
-                    <Link href='https://github.com/BrisaVelasco'> <Icon as={FaGithubSquare } w={7} h={7} />Brisa Velasco</Link>
+                    <div className='contact-item'>
+                        <div className='itemLink'>
+                            <Icon as={ImMail} w={7} h={7}/>
+                            <Text pl='0.5em'>brisavelasco28@gmail.com</Text>
+                        </div>
+                
+                        <div className='itemLink'>
+                            <Icon as={FaLinkedin } w={7} h={7} />
+                            <Link href='https://www.linkedin.com/in/brisa-velasco-4a993b244/' pl='0.5em'>Brisa Velasco</Link>
+                        </div>
+                        
+                        <div className='itemLink'>
+                            <Icon as={FaGithubSquare } w={7} h={7} />
+                            <Link href='https://github.com/BrisaVelasco' pl='0.5em'>Brisa Velasco</Link>
+                        </div>
+                    </div>
                 </div>
+                
             </Box>
         </div>
     )

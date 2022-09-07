@@ -51,17 +51,23 @@ html {
 }
 
 @media screen and (max-width: 767px){
+
   .grid{
     display: grid;
     grid-template-columns: none;
     grid-template-rows: repeat(2, 1fr);
+    background: #d76249;
+  }
+
+  .Home{
+    height: 500px;
   }
   .Name{
-    margin-top: 3em;
+    margin-top: 5em;
   }
   .Image{
     margin-top: -2em;
-    height: 500px;  
+    height: 500px; 
   }
 }
 
@@ -69,59 +75,60 @@ html {
   height: 20%;
   background-color: #d76249;
   color: #fef2c6;
-  height: 800px;
+  height: 450px;
 }
 
 .title-aboutme{
   display: flex;
   justify-content: center;
   font-family: 'Abril Fatface', cursive;
-  padding: 5em;
-
+  padding-top: 5em;
 }
 
 .aboutme-componentText{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, 900px);
+  padding-top: 2em;
 }
 
-.aboutme-img{
+/* .aboutme-img{
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  justify-content: flex-end;
+  align-items: flex-start;
+} */
 
 .TextI{
   font-family: 'Abril Fatface', cursive;
-  margin-left: 6%;
-  margin-right: 6%;
-  padding: 10en;
+  display: flex;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .TextII{
-  margin-left: 6%;
-  margin-right: 6%;
+  display: flex;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 2em;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px){ /*revisar*/
   .aboutme-componentText{
     display: grid;
     grid-template-columns: none;
     grid-template-rows: repeat(2, 1fr);
-
   }
-  .aboutme-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  .title-aboutme{
+    padding: 0%;
   }
   
   .TextI{
     font-family: 'Abril Fatface', cursive;
     margin-left: 6%;
     margin-right: 6%;
-    margin-top: 10%;
   }
   
   .TextII{
@@ -143,8 +150,7 @@ html {
 
 .timeline{
   background-color: #d76249;
-  padding: 5em;
-  
+  padding-top: 2em;
 }
 
 
@@ -253,12 +259,13 @@ html {
 
 @media screen and (max-width: 767px){
   .timeline{
-    padding-top: 40em;
+    padding-top: 38em;
   }
   .timeline-item-content{
     max-width: 100%;
     width: 650px;
   }
+
 }
 
 .List{
@@ -277,9 +284,10 @@ html {
 @media screen and (max-width: 767px){
   .List{
     display: grid;
-    grid-template-columns: none;
-    grid-template-rows: repeat(4, 1fr);
-    padding-left: 20%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 1em;
+    padding-left: 3em;
     height: 100%;
   }
 }
@@ -294,7 +302,7 @@ html {
   display: flex;
   justify-content: center;
   font-family: 'Abril Fatface', cursive;
-  padding-top: 10em;
+  padding-top: 4em;
 }
 
 .subtitle{
@@ -302,8 +310,40 @@ html {
   justify-content: center;
 }
 
+@media screen and (max-width: 767px){
+  .works-title{
+    text-align: center;
+    padding-top: 0em;
+  }
+
+}
+
 .works-box{
   background-color: #d76249;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+@media screen and (max-width: 767px){
+  .works-box{
+    background-color: #d76249;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .box1{
+    padding-top: 2em;
+  }
+
+  .box2{
+    padding-top: 2em;
+  }
+
+  .box3{
+    padding-top: 2em;
+  }
 }
 
 .box1{
@@ -314,13 +354,18 @@ html {
 .box2{
   display: flex;
   justify-content: center;
-  margin-top: 5em;
 }
 
 .box3{
   display: flex;
   justify-content: center;
-  margin-top: 5em;
+
+}
+
+.Icon{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .contact{
@@ -345,11 +390,19 @@ html {
   text-align: center;
   align-items: center;
   font-size: 20px;
-
 }
 
-.Icon{
+.contact-item{
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 1.5em;
+}
+
+
+.itemLink{
+  display: flex;
 }

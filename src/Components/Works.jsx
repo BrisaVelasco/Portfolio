@@ -12,7 +12,7 @@ export const Works = ()=>{
                 </Flex>
                 <br/> 
                 <Flex className="subtitle">
-                    <Text fontSize='2xl'>En el transcurso del Bootcamp desarrollamos aplicaciones enteras desde cero utilizando las ultimas tecnologias del mercado como:</Text>
+                    <Text fontSize='2xl'>En el transcurso del Bootcamp desarrollamos aplicaciones enteras desde cero utilizando las últimas tecnologías del mercado como:</Text>
                 </Flex>
             </div>
                 <div className="List">
@@ -42,138 +42,107 @@ export const Works = ()=>{
                     </Flex>
                     <Flex>
                         <UnorderedList>
-                            <ListItem>PostgresSQL</ListItem>
+                            <ListItem>PostgreSQL</ListItem>
                             <ListItem>MySQL</ListItem>
                             <ListItem>GitHub</ListItem>
                         </UnorderedList>
                     </Flex>
                 </div>
             <div className="works-box">
+            
                 <div className="box1">
-                    <Box 
-                        p={4}
-                        display={{ md: 'flex' }} 
-                        boxShadow='md'  
-                        borderRadius='md' 
-                        bgColor='#fef2c6' 
-                        color='#467b5d'
-                        w='65%'
-                        >
-                        <Box flexShrink={0}>
-                            <Image
+                    <Box maxW='sm' borderWidth='1px' borderRadius='lg' bgColor='#fef2c6'>
+                        <Image 
                             borderRadius='lg'
-                            width={{ md: 40 }}
-                            src='/revistaWOW.png'
-                            alt='revista wow!'
-                            />
-                        </Box>
-                        <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
-                            <Text
-                            mt={1}
-                            display='block'
-                            fontSize='lg'
-                            lineHeight='normal'
-                            fontWeight='semibold'
-                            href='#'
-                            >
-                            Revista Online WOW! - Hogarth
-                            </Text>
-                            <Text mt={2} color='#467b5d'>
-                            WOW! es una revista online especialmente dirigida a mujeres.
-                            Este proyecto fue realizado por 5 personas en el lapso de 4 semanas,
-                            en la cual tuvismos que desarrollar una un nuevo componente para 
-                            atraer mas publico, una ABM en donde podias realizar Altas, Bajas 
-                            y modificaciones a la hora de redactar una noticia.
-                            </Text>
-                            
-                            <div className="Icon">
-                                <Icon as={GoMarkGithub} w={7} h={7} /> 
-                                <Link href="https://github.com/BrisaVelasco/Revista-WOW-">Git Hub</Link>
-                            </div>
+                            p='0.5em'
+                            src='/revistaWow.png' alt='imagenHogarth'></Image>
+                        <Box p='6' bgColor='#fef2c6' borderRadius='lg'>
+                            <Box mt='1'
+                                fontWeight='semibold'
+                                as='h4'
+                                lineHeight='tight'
+                                noOfLines={1}
+                                color='#467b5d'>
+                                <Text>Revista WOW! - Hogarth</Text>
+                            </Box>
+                            <Box as='span' color='#467b5d' fontSize='sm'>
+                                <Text>WOW! es una revista online especialmente dirigida a mujeres.
+                                    Este proyecto fue realizado por 5 personas en el lapso de 4 semanas,
+                                    en la cual tuvimos que desarrollar una un nuevo componente para 
+                                    atraer más público, una ABM en donde podrás realizar Altas, Bajas 
+                                    y modificaciones a la hora de redactar una noticia.
+                                </Text>
+                                <div className="Icon">
+                                    <Box color='#467b5d' pr='1em'>
+                                        <Icon as={GoMarkGithub} w={7} h={7} /> 
+                                        <Link href="https://github.com/BrisaVelasco/Revista-WOW-">Git Hub</Link>
+                                    </Box>
+                                </div>
+                            </Box>
                         </Box>
                     </Box>
                 </div>
                 
                 <div className="box2">
-                    <Box 
-                        p={4} display={{ md: 'flex' }} 
-                        boxShadow='md' 
-                        borderRadius='md' 
-                        bgColor='#fef2c6' 
-                        color='#467b5d'
-                        w='65%'
-                    >
-                        <Box flexShrink={0}>
-                            <Image
+                    <Box maxW='sm' borderWidth='1px' borderRadius='lg' bgColor='#fef2c6'>
+                        <Image 
                             borderRadius='lg'
-                            width={{ md: 40 }}
-                            h='auto'
-                            src='/edlab.png'
-                            alt='E-commerce edlab'
-
-                            />
-                        </Box>
-                        <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
-                            <Text
-                                mt={1}
-                                display='block'
-                                fontSize='lg'
-                                lineHeight='normal'
+                            p='0.5em'
+                            src='/edlab.png' alt='imagenEdlab'
+                        />
+                        <Box p='6' bgColor='#fef2c6' borderRadius='lg'>
+                            <Box mt='1'
                                 fontWeight='semibold'
-                                href='#'
-                            >
-                             Edlab - Plataforma 5
-                            </Text>
-                            <Text mt={2} color='#467b5d'>
-                                En plataforma 5 nos desafiaron a realizar un e-comerce en una práctica grupal de 5 personas que se llamo EDLAB en la que desarrollamos,
-                                en 2 semanas, una tienda online de productos
-                                tecnológicos, con vista de Administrador y cliente.
-                                Edlab fue pensado para que el usuario tenga una simple y buena experiencia a la hora de hacer una compra online.
-                            </Text>
-                            <div className="Icon">
-                                <Icon as={GoMarkGithub} w={7} h={7} /> 
-                                <Link href="https://github.com/BrisaVelasco/E-commerce-Edlab">Git Hub</Link>
-                            </div>
+                                as='h4'
+                                lineHeight='tight'
+                                noOfLines={1}
+                                color='#467b5d'>
+                                <Text>Edlab - Plataforma 5</Text>
+                            </Box>
+                            <Box as='span' color='#467b5d' fontSize='sm'>
+                                <Text>
+                                    En plataforma 5 nos desafiaron a realizar en una práctica grupal de 5 personas, durante 2 semanas, una tienda online de productos tecnológicos, con vista de Administrador y cliente.
+                                    Edlab fue pensado para que el usuario tenga una simple y buena experiencia a la hora de hacer una compra online.
+                                </Text>
+                            </Box>
                         </Box>
+                            <div className="Icon">
+                                <Box color='#467b5d' pr='1em'>  
+                                    <Icon as={GoMarkGithub} w={7} h={7} /> 
+                                    <Link href="">Git Hub</Link>
+                                </Box>
+                            </div>
                     </Box>
                 </div>
 
                 <div className="box3">
-                    <Box 
-                        p={4} display={{ md: 'flex' }} 
-                        boxShadow='md' 
-                        borderRadius='md' 
-                        bgColor='#fef2c6' 
-                        color='#467b5d'
-                        w='65%'
-                    >
-                        <Box flexShrink={0}>
-                            <Image
+                    <Box maxW='sm' borderWidth='1px' borderRadius='lg' bgColor='#fef2c6'>
+                        <Image 
                             borderRadius='lg'
-                            width={{ md: 40 }}
-                            src='/portfolio.png'
-                            alt='Woman paying for a purchase'
-                            />
-                        </Box>
-                        <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
-                            <Text
-                                mt={1}
-                                display='block'
-                                fontSize='lg'
-                                lineHeight='normal'
+                            p='0.5em'
+                            src='/portfolio.png' alt='imagenPortfolio'></Image>
+                        <Box p='6' bgColor='#fef2c6' borderRadius='lg'>
+                            <Box mt='1'
                                 fontWeight='semibold'
-                                href='#'
-                            >
-                             Portfolio - Brisa Velasco
+                                as='h4'
+                                lineHeight='tight'
+                                noOfLines={1}
+                                color='#467b5d'>
+                                <Text>Portfolio - Brisa Velasco</Text>
+                            </Box>
+                            <Box as='span' color='#467b5d' fontSize='sm'>
+                                <Text>
+                                El portfolio es un trabajo individual propio que elaboré durante unas semanas. En este portfolio me exprese con los colores, el diseño y los estilos. Quería que me representara a mi misma, las cosas que me gustan, mi personalidad para que así puedan conocerme.
                             </Text>
-                            <Text mt={2} color='#467b5d'>
-                                El portfolio es un trabajo individual propio. En este proyecto queria hacer algo que me represente al 100% y puedan conocerme un poco más.
-                            </Text>
-                            <div  className="Icon">
+                                <br/>
+                            </Box>
+                        </Box>
+                        <div  className="Icon">
+                            <Box color='#467b5d' pr='1em'>
                                 <Icon as={GoMarkGithub} w={7} h={7} /> 
                                 <Link href="https://github.com/BrisaVelasco/Revista-WOW">Git Hub</Link>
-                            </div>
-                        </Box>
+                            </Box>
+                        </div>
                     </Box>
                 </div>
             </div>

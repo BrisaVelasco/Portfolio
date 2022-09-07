@@ -1,4 +1,5 @@
 import { Text, Flex, Image} from '@chakra-ui/react';
+import {Timeline} from './Timeline'
 
 export const AboutMe = ()=>{
     return(
@@ -9,16 +10,17 @@ export const AboutMe = ()=>{
                 </Flex>
             </div>
             <div className='aboutme-componentText'>
-                <div className='aboutme-img'>
-                    <Flex>
+                {/* <div className='aboutme-img'>
+                    <img src="brisa.jpg" width="300" height="241"></img>
+                   <Flex>
                         <Image
                             borderRadius='full'
                             boxSize='sm'
-                            src='/brisa.png'
+                            src='/brisavelasco.jpg'
                             alt='Dan Abramov'
                         />
-                    </Flex>
-                </div>
+                    </Flex> 
+                </div> */}
                 <div>
                     <div className='TextI'>
                         <Flex>
@@ -30,12 +32,12 @@ export const AboutMe = ()=>{
                     </div>
                     <div className='TextII'>
                         <Flex>
-                            <Text fontSize='2xl'>En mis tiempos libres me encontrarás soñando con desayunos, ​​cocinando acompañada de musica y descubriendo culturas de otros paises.</Text>
+                            <Text fontSize='2xl'>En mis tiempos libres me encontrarás soñando con desayunos, ​​cocinando acompañada de música y descubriendo culturas de otros países.</Text>
                             <br/>
                         </Flex>
                     </div>
                 </div>
-                </div>
+            </div>
         </div>
         
     )

@@ -13,7 +13,7 @@ export const Home = ()=>{
                 <div className='Presentation'>
                     <Flex>
                         <Text fontSize='3xl'>
-                            Hola mundo mi nombre es Brisa y soy desarrolladora Full Stack developer, me especializo en crear y ocacionamente a diseñar una interfaz de usuario atractiva, dando vida a la experiencia del usuario.
+                            Hola mundo mi nombre es Brisa y soy desarrolladora Full Stack developer, me especializo en crear y ocasionalmente a diseñar una interfaz de usuario atractiva, dando vida a la experiencia del usuario.
                         </Text>
                     </Flex> 
                 </div>
