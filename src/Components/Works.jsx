@@ -18,32 +18,36 @@ export const Works = ()=>{
                 <div className="List">
                     <Flex>
                         <UnorderedList>
+                            <ListItem>JavaScript</ListItem>
+                            <ListItem>React</ListItem>
                             <ListItem>HTML5</ListItem>
                             <ListItem>CSS3</ListItem>
-                            <ListItem>React</ListItem>
                             <ListItem>Next</ListItem>
                         </UnorderedList>
                     </Flex>
                     <Flex>
                         <UnorderedList>
-                            <ListItem>Redux</ListItem>
                             <ListItem>Material-UI</ListItem>
                             <ListItem>Chakra-UI</ListItem>
                             <ListItem>Bootstrap</ListItem>
-                        </UnorderedList>
-                    </Flex>
-                    <Flex>
-                        <UnorderedList>
                             <ListItem>Node.JS</ListItem>
                             <ListItem>Express</ListItem>
-                            <ListItem>Sequelize</ListItem>
-                            <ListItem>MongoDB</ListItem>
                         </UnorderedList>
                     </Flex>
                     <Flex>
                         <UnorderedList>
-                            <ListItem>PostgreSQL</ListItem>
-                            <ListItem>MySQL</ListItem>
+                            <ListItem>SQL</ListItem>
+                            <ListItem>PostgresSQL</ListItem>
+                            <ListItem>MongoDB</ListItem>
+                            <ListItem>Sequelize</ListItem>
+                            <ListItem>Express</ListItem>
+                        </UnorderedList>
+                    </Flex>
+                    <Flex>
+                        <UnorderedList>
+                            <ListItem>Redux</ListItem>
+                            <ListItem>JWT</ListItem>
+                            <ListItem>Git</ListItem>
                             <ListItem>GitHub</ListItem>
                         </UnorderedList>
                     </Flex>
@@ -134,7 +138,6 @@ export const Works = ()=>{
                                 <Text>
                                 El portfolio es un trabajo individual propio que elaboré durante unas semanas. En este portfolio me exprese con los colores, el diseño y los estilos. Quería que me representara a mi misma, las cosas que me gustan, mi personalidad para que así puedan conocerme.
                             </Text>
-                                <br/>
                             </Box>
                         </Box>
                         <div  className="Icon">
