@@ -1,4 +1,4 @@
-import { Flex, Text, Box, Link } from "@chakra-ui/react";
+import { Text, Box, Link } from "@chakra-ui/react";
 import { Icon } from '@chakra-ui/react';
 import { ImMail } from "react-icons/im";
 import {FaLinkedin, FaGithubSquare} from 'react-icons/fa';

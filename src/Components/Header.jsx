@@ -1,5 +1,5 @@
 import { Flex, Text, IconButton} from '@chakra-ui/react';
-import { Button, ButtonGroup } from '@chakra-ui/react';
+import { Button } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon  } from '@chakra-ui/icons';
 import { useState } from 'react';
 

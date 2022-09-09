@@ -1,5 +1,4 @@
-import { Text, Flex, Image} from '@chakra-ui/react';
-import {Timeline} from './Timeline'
+import { Text, Flex} from '@chakra-ui/react';
 
 export const AboutMe = ()=>{
     return(
@@ -10,17 +9,6 @@ export const AboutMe = ()=>{
                 </Flex>
             </div>
             <div className='aboutme-componentText'>
-                {/* <div className='aboutme-img'>
-                    <img src="brisa.jpg" width="300" height="241"></img>
-                   <Flex>
-                        <Image
-                            borderRadius='full'
-                            boxSize='sm'
-                            src='/brisavelasco.jpg'
-                            alt='Dan Abramov'
-                        />
-                    </Flex> 
-                </div> */}
                 <div>
                     <div className='TextI'>
                         <Flex>
