@@ -5,7 +5,7 @@ const data = [
     },
     {
         title: '2020',
-        text: 'Un año de cambios que nos marcó a todos por la pandemia. En el 2020 fui estudiante desde casa, fui emprendedora diseñe y confeccione ropa. '
+        text: 'Un año de cambios que nos marcó a todos por la pandemia. En el 2020 fui estudiante desde casa, además fui emprendedora, diseñe y confeccione ropa. '
     },
     {
         title: '2021',
